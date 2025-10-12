@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard | Art Fest 2025</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{
+      background:linear-gradient(135deg,#0d223a,#090a0f);
+      color:#fff;
+      min-height:100vh;
+      text-align:center;
+      padding-bottom:40px;
+    }
+    nav{
+      background:rgba(0,0,0,0.4);
+      backdrop-filter:blur(10px);
+      padding:15px 0;
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      font-weight:600;
+    }
+    nav a{color:white;text-decoration:none;font-size:18px;transition:0.3s;}
+    nav a:hover{color:#00eaff;}
+    h1{margin:20px 0;color:#ffd700;text-shadow:0 0 10px #ffd700;}
+    .scoreboard{
+      display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:30px;
+    }
+    .team{
+      background:rgba(255,255,255,0.1);
+      border-radius:15px;
+      padding:20px;
+      width:220px;
+      text-align:center;
+      transition:transform 0.3s;
+      box-shadow:0 0 15px rgba(255,255,255,0.05);
+    }
+    .team:hover{transform:scale(1.05);}
+    .team h3{margin-bottom:10px;font-size:1.4rem;}
+    .team.red{border:2px solid #ff4444;}
+    .team.blue{border:2px solid #3b82f6;}
+    .team.green{border:2px solid #10b981;}
+    .team.yellow{border:2px solid #facc15;}
+    .points{font-size:2rem;font-weight:bold;margin-bottom:10px;}
+    .onstage,.offstage{margin:6px 0;}
+    .update-section{
+      margin-top:40px;background:rgba(255,255,255,0.1);
+      padding:20px;border-radius:12px;width:320px;margin-inline:auto;
+    }
+    label,select,input,button{display:block;width:100%;margin-bottom:10px;}
+    input,select{padding:8px;border-radius:8px;border:none;outline:none;}
+    button{
+      background:#00eaff;color:#000;font-weight:bold;padding:10px;
+      border:none;border-radius:8px;cursor:pointer;transition:0.3s;
+    }
+    button:hover{background:#ffd700;}
+    .leader{
+      margin-top:30px;padding:20px;background:rgba(255,255,255,0.1);
+      border-radius:12px;font-size:1.2rem;color:#00ff88;font-weight:bold;
+      width:320px;margin-inline:auto;
+    }
+  </style>
+</head>
+<body>
+
+  
+    
+    <nav>
+      
+    <a href="arts project.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="result.html">Result</a>
+  <a href="scoreboard.html">scoreboard</a>
+  </nav>
+  <h1>🏆 Art Fest Scoreboard 2025</h1>
+
+  <div class="scoreboard">
+    <div class="team red">
+      <h3>Red Team 🔴</h3>
+      <div class="points" id="redPoints">0 </div>
+      <div class="onstage">On-Stage: <span id="redOn">0</span></div>
+      <div class="offstage">Off-Stage: <span id="redOff">0</span></div>
+    </div>
+
+    <div class="team blue">
+      <h3>Blue Team 🔵</h3>
+      <div class="points" id="bluePoints">0</div>
+      <div class="onstage">On-Stage: <span id="blueOn">0</span></div>
+      <div class="offstage">Off-Stage: <span id="blueOff">0</span></div>
+    </div>
+
+    <div class="team green">
+      <h3>Green Team 🟢</h3>
+      <div class="points" id="greenPoints">0</div>
+      <div class="onstage">On-Stage: <span id="greenOn">0</span></div>
+      <div class="offstage">Off-Stage: <span id="greenOff">0</span></div>
+    </div>
+
+    <div class="team yellow">
+      <h3>Yellow Team 🟡</h3>
+      <div class="points" id="yellowPoints">200</div>
+      <div class="onstage">On-Stage: <span id="yellowOn">100</span></div>
+      <div class="offstage">Off-Stage: <span id="yellowOff">100</span></div>
+    </div>
+  </div>
+
+  <div class="update-section">
+    
+    
+    
+
+    
+    
+
+    
+  </div>
+
+  <div class="leader" id="leader">🏆 Leading Team: RED</div>
+
+  <script>
+    const teams = {
+      red: { on: 0, off: 0 },
+      blue: { on: 0, off: 0 },
+      green: { on: 0, off: 0 },
+      yellow: { on: 0, off: 0 }
+    };
+
+    </script>
+  
+</body>
+</html>
