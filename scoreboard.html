@@ -82,7 +82,7 @@
       <h3>Red Team 🔴</h3>
       <div class="points" id="redPoints">0 </div>
       <div class="onstage">On-Stage: <span id="redOn">0</span></div>
-      <div class="offstage">Off-Stage: <span id="redOff">0</span></div>
+      <div class="offstage">Off-Stage: <span id="redOff">8</span></div>
     </div>
 
     <div class="team blue">
@@ -96,14 +96,14 @@
       <h3>Green Team 🟢</h3>
       <div class="points" id="greenPoints">0</div>
       <div class="onstage">On-Stage: <span id="greenOn">0</span></div>
-      <div class="offstage">Off-Stage: <span id="greenOff">0</span></div>
+      <div class="offstage">Off-Stage: <span id="greenOff">13</span></div>
     </div>
 
     <div class="team yellow">
       <h3>Yellow Team 🟡</h3>
       <div class="points" id="yellowPoints">0 </div>
       <div class="onstage">On-Stage: <span id="yellowOn"> 0</span></div>
-      <div class="offstage">Off-Stage: <span id="yellowOff">0 </span></div>
+      <div class="offstage">Off-Stage: <span id="yellowOff">16 </span></div>
     </div>
   </div>
 
@@ -118,8 +118,12 @@
     
   </div>
 
-  <div class="leader" id="leader">🏆 Leading Team: NONE</div>
-
+  <div class="leader" id="leader">🏆 Leading Team: YELLOW🟡 id="team"</div>
+ <style>
+   #team{
+     color:yellow;
+   }
+ </style>
   <script>
     const teams = {
       red: { on: 0, off: 0 },
@@ -132,6 +136,7 @@
   
 </body>
 </html>
+
 
 
 
